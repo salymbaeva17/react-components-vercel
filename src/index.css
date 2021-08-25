@@ -1,1 +1,14 @@
-
+.input{
+    margin: 10px auto;
+}
+.pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page-item{
+    cursor: pointer;
+}
+.page-item:not(:last-child){
+    margin-right: 10px;
+}

@@ -5,8 +5,8 @@ import axios from "axios";
 const Task1 = () => {
     const [userId, setUserId] = useState(1)
     const [people, setPeople] = useState({})
-    const [message, setMessage] = useState("")
     useEffect(() => {
+        console.log(123)
             axios(`https://swapi.dev/api/people/${userId}`)
                 .then(({data}) => setPeople(data))
         }, [userId]
